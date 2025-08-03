@@ -1,4 +1,4 @@
-.test
+.text
 .global _start
 
 _start:
@@ -8,7 +8,7 @@ _start:
 
     ldr r1, =0x56000054
     ldr r0, =0
-    srt r0, [r1]
+    str r0, [r1]
 
 hatl:
     b hatl
