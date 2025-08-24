@@ -9,13 +9,13 @@ int main(void)
     while(1)
     {
         c = getchar();
-        if (c == "\r")
+        if (c == '\r')
         {
-            putchar("\n");
+            putchar('\n');
         }
-        if (c == "\n")
+        if (c == '\n')
         {
-            putchar("\r");
+            putchar('\r');
         }
         putchar(c);
     }
