@@ -34,6 +34,7 @@ int receive_byte(void)
 int putchar(int c)
 {
     send_byte(c);
+    return c;
 }
 
 int getchar()
@@ -48,4 +49,5 @@ int puts(const char *s)
         putchar(*s);
         s++;
     }
+    return 0;
 }
