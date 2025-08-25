@@ -51,3 +51,37 @@ int puts(const char *s)
     }
     return 0;
 }
+
+void printf(const char *fmt, ...)
+{
+    va_list ap;
+    va_start(ap, fmt);
+
+    while(*fmt)
+    {
+        if (*fmt = '%'){
+            fmt++;
+            switch(*fmt){
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case 'x':
+                    break;
+                case 'c':
+                    break;
+                case '%':
+                    break;
+                default:
+                    break;
+            }
+        }
+        else{
+            //put char str
+        }
+        fmt++;
+    }
+
+    va_end(ap);
+
+}
